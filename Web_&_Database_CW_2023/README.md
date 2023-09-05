@@ -1,4 +1,4 @@
-This was my Web and Database coursework that I completed in my first year of study, receiving 88% on it.
+This was my Web and Database coursework that I completed in my first year of study (Dec 2022), receiving 88% on it.
 
 Project Outline:
 We were tasked to create the back and front end for a University Accomidation Office System from scratch, what you see in this folder is the final outcome of that project.
