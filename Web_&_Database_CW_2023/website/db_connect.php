@@ -3,8 +3,8 @@
 $servername = "localhost";
 $username = "root";
 $password = ""; 
-$dbname = "accomidation"; #you need to replace this with the name of your database
-$port = "3306"; # do not remove this - it is being used to automatically run the script
+$dbname = "accomidation"; #the name of the database
+$port = "3306";
 
 // Create a connection to MySQL
 $conn = new mysqli($servername, $username, $password, $dbname);
