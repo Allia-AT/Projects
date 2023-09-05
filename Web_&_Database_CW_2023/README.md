@@ -7,8 +7,7 @@ I designed the database by created the EERD shown bellow: This is also how the t
 
 
 References:
-On line 12 of page1.php and page2.php (<img class="headimg" src = "img/header.png">), the
-header picture of the website:
+On line 12 of page1.php and page2.php, the header picture of the website:
 
 Allia A.T. [@A T] (2022) ‘Header [Canva] 23rd Nov. Available at: https://www.canva.com/design/DAFSz79mUUA/n5S6-ouVZ8u07skiHL0WGA/viewutm_content=DAFSz79mUUA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 (Accessed: 23/11/2020) WHICH REFERENCES:
