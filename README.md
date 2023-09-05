@@ -1,2 +1,2 @@
-# 2023
-ALL THE PROJECTS COMLETED IN 2023
+# About
+This repo contains any/all projects I have completed in both my degree and privately
