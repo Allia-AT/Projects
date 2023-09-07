@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- Specify which style warnings may be ignored for COM1028. -->
+
+<!DOCTYPE suppressions PUBLIC
+    "-//Checkstyle//DTD SuppressionFilter Configuration 1.1//EN"
+    "https://checkstyle.org/dtds/suppressions_1_1.dtd">
+
+<suppressions>
+	<!-- JavaDoc not required in test classes. -->
+    <suppress files=".*Test.*" checks="MissingJavadocType"/>
+    <suppress files=".*Test.*" checks="MissingJavadocMethod"/>
+    <suppress files="." checks="JavadocPackage"/>
+</suppressions>
