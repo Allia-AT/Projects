@@ -1,6 +1,7 @@
 ## Project Details
 I was given a maven project outline to create a system that can fufill certain requirements for a company, Films4You.
 This project contains test cases for each requirement and I was told to follow the Google Style Guild for coding.
+This project had me creating Java classes interacting with a SQL database, with the restraint that each only SELECT ALL statements could be used and that each class must only connect to a singular table within the database.
 We were also asked to create Proto-personas for requirement 1, and model the other 3 requierments using UML class diagrams and UML sequence diagrams. 
 For this coursework, I recieved 73% on this coursework. 
 
