@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<h1>{% trans 'accTitle' %}</h1>
+<div class="b-example-divider"></div>
+<div class="container my-5">
+    <div class="p-5 bg-body-tertiary rounded-3">
+
+        {% trans 'accUsername' %}: {{ app_user.display_name }}
+        <p>{% trans 'accEmail' %}: {{ app_user.user.email }}</p>
+    </div>
+</div>
+
+<div class="b-example-divider"></div>
+
+{% endblock %}
+
+
+{% block body_end_meta %}
+{% endblock %}

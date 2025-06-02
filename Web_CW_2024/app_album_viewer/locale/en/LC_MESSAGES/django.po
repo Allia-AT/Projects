@@ -1,0 +1,77 @@
+msgid "alDetailsTitle"
+msgstr "Album Details"
+
+msgid "details"
+msgstr "Details"
+
+msgid "recButton"
+msgstr "Recommend"
+
+msgid "showTracklistButton"
+msgstr "Show Tracklist"
+
+msgid "delAlbButon"
+msgstr "Delete Album"
+
+msgid "alInfo"
+msgstr "Infomation"
+
+msgid "alFormat"
+msgstr "Format"
+
+msgid "alRelDate"
+msgstr "Release Date"
+
+msgid "alArtist"
+msgstr "Artist"
+
+msgid "tracklistTitle"
+msgstr "Tracklist"
+
+msgid "name"
+msgstr "Name"
+
+msgid "runtime"
+msgstr "Runtime"
+
+msgid "remove"
+msgstr "Remove"
+
+msgid "noSongInTrack"
+msgstr "No songs in this album's tracklist"
+
+msgid "commentTitle"
+msgstr "Comments"
+
+msgid "noCommentsMsg"
+msgstr "No comments yet"
+
+msgid "addSong"
+msgstr "Add Song to Tracklist"
+
+msgid "addButton"
+msgstr "Add"
+
+msgid "NoAvaliableSongMsg"
+msgstr "No more songs left to add :("
+
+msgid "alListTitle"
+msgstr "All Albums"
+
+msgid "myRecsTitle"
+msgstr "My Recommendations"
+
+msgid "showMyRecsButton"
+msgstr "Show my Recommendations"
+
+msgid "buyButton"
+msgstr "Buy"
+
+msgid "alName"
+msgstr "Album Name"
+
+msgid "noRecMsg"
+msgstr "You have no recommdations currently"
+
+msgid "makeRecsTitle"
+msgstr "Recommnding"

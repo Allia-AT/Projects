@@ -1,0 +1,37 @@
+{% load static %}
+{% load i18n %}
+
+<!--https://getbootstrap.com/docs/5.3/examples/headers/
+option 3-->
+<div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <!--logo image-->
+        <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <svg class="bi" width="40" height="32" role="img" aria-label="logo"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+      </div>
+      <!--nav bar links-->
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        {% if user.is_authenticated %}
+        <li><a href="/" class="nav-link px-2 link-secondary">{% trans 'homeLink' %}</a></li>
+          <li><a href="{% url 'all_albums' %}" class="nav-link px-2">{% trans 'allAlsLink' %}</a></li>
+          <li><a href="{% url 'page_account' %}" class="nav-link px-2">{% trans 'accLink' %}</a></li>
+      </ul>
+          <!--logout buttons-->
+          <div class="col-md-3 text-end">
+            <a href="{% url 'logout' %}" ><button type="button" class="btn btn-outline-primary me-2">{% trans 'logoutButton' %}</button></a>
+          </div>
+        {% else %}
+          <li><a href="/" class="nav-link px-2 link-secondary">{% trans 'homeLink' %}</a></li>
+          <li><a href="{% url 'all_albums' %}" class="nav-link px-2">{% trans 'allAlsLink' %}</a></li>
+          <li><a href="{% url 'page_about' %}" class="nav-link px-2">{% trans 'aboutLink' %}</a></li>
+          <li><a href="{% url 'page_contact' %}" class="nav-link px-2">{% trans 'contactLink' %}</a></li>
+      </ul>
+      <!--sign up/login buttons-->
+      <div class="col-md-3 text-end">
+        <a href="{% url 'login' %}" ><button type="button" class="btn btn-outline-primary me-2">{% trans 'loginButton' %}</button></a>
+      </div>
+      {% endif %}
+    </header>
+  </div>

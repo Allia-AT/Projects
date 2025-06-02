@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+
+{% block page_title %}
+Login Page
+{% endblock %}
+
+{% block content %}
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+    <a href="{% url 'page_home' %}" class="btn btn-link" >Back</a>
+    <input type="submit" class="btn btn-primary" value="Log in"> 
+</form>
+
+{% endblock %}
+

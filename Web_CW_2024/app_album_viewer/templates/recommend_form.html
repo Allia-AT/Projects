@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<h1>{% trans 'makeRecsTitle' %} {{ album.title }}</h1>
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+    {{ form.as_p }}
+    <a href="{% url 'all_albums' %}" class="btn btn-link" >Back</a>
+    <input type="submit" class="btn btn-primary" value="Save">
+</form>
+{% endblock %}

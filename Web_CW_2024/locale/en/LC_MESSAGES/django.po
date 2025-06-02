@@ -1,0 +1,39 @@
+msgid "AppName"
+msgstr "MyMusicMaestro"
+
+
+msgid "RecommendEmailSubject"
+msgstr "A friend recommends an album on MyMusic Maestro!"
+
+msgid "RecommendEmailMessage"
+msgstr "Why not take a look at this album I think you'll enjoy? It's called %(album)s."
+
+msgid "RecommendEmailMessageWithUser"
+msgstr "%(user)s thinks you'll enjoy this album. It's called %(album)s."
+
+msgid "homeLink"
+msgstr "Home"
+
+msgid "contactLink"
+msgstr "Contact"
+
+msgid "helpLink"
+msgstr "Help"
+
+msgid "aboutLink"
+msgstr "About"
+
+msgid "accLink"
+msgstr "Account"
+
+msgid "allAlsLink"
+msgstr "Albums"
+
+msgid "loginButton"
+msgstr "Login"
+
+msgid "logoutButton"
+msgstr "Log Out"
+
+msgid "copywrite"
+msgstr "2023 Company, Inc"

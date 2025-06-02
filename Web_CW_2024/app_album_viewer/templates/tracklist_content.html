@@ -1,0 +1,30 @@
+{% load i18n %}
+
+<div class="container my-5">
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <h2 class="text-body-emphasis">{% trans 'tracklistTitle' %}</h2>
+        {% if tracklist %}
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th class="text-center">{% trans 'name' %}</th>
+                        <th class="text-center">{% trans 'runtime' %}</th>
+                        <th class="text-center">{% trans 'remove' %}</th>
+                    </tr>
+                </thead>
+            {% for song in tracklist %}
+                <tbody>
+                    <tr>
+                        <td class="text-center align-middle">{{ song.title }}</td>
+                        <td class="text-center align-middle">{{ song.runtime }}</td>
+                        <td><a href="{% url 'delete_song' album.album_id album.slug song.song_id %}"> <button type="button" class="btn btn-light btn-lg btn-block"><i class="bi bi-dash-lg"></i> </button></a></td>
+                    </tr>
+                </tbody>
+            {% endfor %}
+            </table>
+        {% else %}
+            <p class="lead"> {% trans 'noSongInTrack' %} </p>
+        {% endif %}
+
+    </div>
+</div>

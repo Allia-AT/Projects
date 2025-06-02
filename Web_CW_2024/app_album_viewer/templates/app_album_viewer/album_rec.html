@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="b-example-divider"></div>
+<div class="container my-5">
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+      {% if recommeded %}
+      <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th class="text-center">{% trans 'alName' %}</th>
+                <th class="text-center">{% trans 'details' %}</th>
+            </tr>
+        </thead>
+      {% for album in recommeded %}
+      <tbody>
+        <tr>
+            <td class="text-center align-middle">{{ album.album.title }}</td>
+            <td class="text-center align-middle">
+                <a href="{% url 'album_details' album.album.album_id album.album.slug %}">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">&nbsp;{% trans 'details' %}</button>
+                </a>
+            </td>
+        </tr>
+    </tbody>
+      {% endfor %}
+    </table>
+      {% else %}
+        {% trans 'noRecMsg' %}
+      {% endif %}
+    </div>
+</div>
+{% endblock %}

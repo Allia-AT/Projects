@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<h1>{{ album.title }} {% trans 'details' %}</h1>
+
+<div class="b-example-divider"></div>
+<a href = "{% url 'delete_album' album.album_id album.slug %}">
+<button type="button" class="btn btn-danger"> {% trans 'delAlbButton' %} </button>
+</a>
+{% if user.is_authenticated %}
+<div class="b-example-divider"></div>
+<div class="d-grid gap-2 col-6 mx-auto">
+    <a href="{% url 'recommend' album.album_id album.slug %}"><button class="btn btn-secondary" type="button"> {% trans 'recButton' %} </button></a>
+  </div>
+{% endif %}
+<div class="d-grid gap-2 col-6 mx-auto">
+    <a href="{% url 'tracklist' album.album_id %}"><button class="btn btn-secondary" type="button"> {% trans 'showTracklistButton' %} </button></a>
+  </div>
+<div class="container my-5">
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <h2 class="text-body-emphasis">Infomation</h2>
+        <p class="lead">{% trans 'alFormat' %}: {{ album.type_of_format }} </p>
+        <p class="lead">{% trans 'alRelDate' %}: {{ album.release_date }}</p>
+        <p class="lead">{% trans 'alArtist' %}: {{ album.artist }} </p>
+    </div>
+</div>
+<div class="b-example-divider"></div>
+
+{% include "tracklist_content.html" %}
+
+<div class="b-example-divider"></div>
+<div class="container my-5">
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <h2 class="text-body-emphasis"> {% trans 'commentTitle' %} </h2>
+        {% if comments %}
+        {% for comment in comments %}
+        <p class="lead">
+            {{ comment.user }}: {{ comment.comment }}
+        </p>
+        {% endfor %}
+        {% else %}
+        <p class="lead"> {% trans 'noCommentsMsg' %} </p>
+        {% endif %}
+
+    </div>
+</div>
+<div class="b-example-divider"></div>
+
+<div class="container my-5">
+    <div class="p-5 text-center bg-body-tertiary rounded-3">
+        <h2 class="text-body-emphasis">{% trans 'addSong' %}:</h2>
+        {% if avaliable_songs %}
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th class="text-center">{% trans 'name' %}</th>
+                        <th class="text-center">{% trans 'runtime' %}</th>
+                        <th class="text-center">{% trans 'add' %}</th>
+                    </tr>
+                </thead>
+            {% for song in avaliable_songs %}
+                <tbody>
+                    <tr>
+                        <td class="text-center align-middle">{{ song.title }}</td>
+                        <td class="text-center align-middle">{{ song.runtime }}</td>
+                        <td><a href="{% url 'new_song' album.album_id album.slug song.song_id %}"> <button type="button" class="btn btn-light btn-lg btn-block"><i class="bi bi-plus-lg"></i> </button></a></td>
+                    </tr>
+                </tbody>
+            {% endfor %}
+            </table>
+        {% else %}
+            <p class="lead"> {% trans 'NoAvaliableSongMsg' %} </p>
+        {% endif %}
+
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+{% block body_end_meta %}
+{% endblock %}
+
+
+

@@ -1,0 +1,15 @@
+<!--https://getbootstrap.com/docs/5.3/examples/footers/
+3rd option-->
+{% load static %}
+{% load i18n %}
+<div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary">{% trans 'homeLink' %}</a></li>
+        <li class="nav-item"><a href="{% url 'page_contact' %}" class="nav-link px-2 text-body-secondary">{% trans 'contactLink' %}</a></li>
+        <li class="nav-item"><a href="{% url 'page_help' %}"" class="nav-link px-2 text-body-secondary">{% trans 'helpLink' %}</a></li>
+        <li class="nav-item"><a href="{% url 'page_about' %}" class="nav-link px-2 text-body-secondary">{% trans 'aboutLink' %}</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© {% trans 'copywrite' %}</p>
+    </footer>
+</div>

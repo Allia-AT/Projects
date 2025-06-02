@@ -1,0 +1,20 @@
+msgid "aboutContent"
+msgstr "We are like spotify"
+
+msgid "accTitle"
+msgstr "Account Info"
+
+msgid "accUsername"
+msgstr "Username"
+
+msgid "accEmail"
+msgstr "Email"
+
+msgid "contactContent"
+msgstr "Contact infomation bellow"
+
+msgid "helpContent"
+msgstr "Help is here :P"
+
+msgid "homeContent"
+msgstr "you are in the home page"
