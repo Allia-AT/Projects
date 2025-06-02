@@ -1,7 +1,39 @@
 MyMusic Maestro
 ===============
+**About the App**
+------------------------
+The purpose of this project was to demonstrate my ability to:
+1. Develop an interactive web app.
+2. Use a Django backend.
 
-Instructions for marking
+<br />This involved me building a web app using Django, which will include Python classes and a database that will provide the user interface to your application using standard web technologies.
+
+<br />**Problem Definition**
+You will create a music cataloguing application, called 'MyMusic Maestro', to manage albums, songs, and users. The system has the following constraints.
+
+**Albums**
+have an optional cover art image; they use a default image if a cover art image is not specified
+have a title, which is required and may not be unique
+have a description, which could be empty
+have an artist, which is a string, and required
+have a price, in GBP, which is required but may be zero
+have a format, one of 'Digital download', 'CD', 'Vinyl'
+have a release date; unreleased albums may have a release date up to three years in the future (if more than one year away, it must be set to January)
+may have songs associated to them, i.e., the tracklist
+have comments left by users
+
+**Songs**
+have a title, which is required and may not be unique
+have a running time, which is represented in number of seconds and required
+appear in albums (may be in more than one album)
+
+**Users**
+have an email and/or username (their login ID)
+have a password (their login password)
+have a display name, shown against their comments
+comment on albums
+
+Instructions for Using the App
 ------------------------
 <br />To Login:
 >User 1
@@ -17,6 +49,7 @@ Instructions for marking
 >>Login Password-- password
 >>
 >>Username (for making recommendations) -- testUser2
+>>
 
 Cool Features:
 >1. Clicking Buy on an album when not logged in will result in a popup
