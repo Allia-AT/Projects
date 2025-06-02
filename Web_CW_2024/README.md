@@ -52,14 +52,21 @@ Instructions for Using the App
 >>Username (for making recommendations) -- testUser2
 >>
 <br />**The following commands must be run against the code to run the app:**
+The bellow code will complete the following setps:
+1. Compile any SASS files you may have. This is optional and carries no marks; you do not need to use SASS unless desired.
+2. Generate localisation strings
+3. In case required migrations were not supplied
+4. To perform the migrations to the local database
+5. Insert your sample data into the database
+6. Run your web application (this will be running on your local machine)
 ```
-python3 manage.py compilescss #to compile any SASS files you may have. This is optional and carries no marks; you do not need to use SASS unless desired.
-python3 manage.py compilemessages #to generate localisation strings.
-python3 manage.py makemigrations #in case required migrations were not supplied.
-python3 manage.py migrate #to perform the migrations to the local database.
-python3 manage.py seed #to insert your sample data into the database.
+python3 manage.py compilescss
+python3 manage.py compilemessages
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py seed
 python3 manage.py test #to run your tests.
-python3 manage.py runserver #to run your web application.
+python3 manage.py runserver
 ```
 
 **Cool Features:**
