@@ -53,13 +53,13 @@ Instructions for Using the App
 >>
 <br />**The following commands must be run against the code to run the app:**
 ```
-python3 manage.py compilescss, to compile any SASS files you may have. This is optional and carries no marks; you do not need to use SASS unless desired.
-python3 manage.py compilemessages, to generate localisation strings.
-python3 manage.py makemigrations, in case required migrations were not supplied.
-python3 manage.py migrate, to perform the migrations to the local database.
-python3 manage.py seed, to insert your sample data into the database.
-python3 manage.py test, to run your tests.
-python3 manage.py runserver, to run your web application.
+python3 manage.py compilescss #to compile any SASS files you may have. This is optional and carries no marks; you do not need to use SASS unless desired.
+python3 manage.py compilemessages #to generate localisation strings.
+python3 manage.py makemigrations #in case required migrations were not supplied.
+python3 manage.py migrate #to perform the migrations to the local database.
+python3 manage.py seed #to insert your sample data into the database.
+python3 manage.py test #to run your tests.
+python3 manage.py runserver #to run your web application.
 ```
 
 **Cool Features:**
