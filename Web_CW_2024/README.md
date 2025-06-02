@@ -51,14 +51,16 @@ Instructions for Using the App
 >>
 >>Username (for making recommendations) -- testUser2
 >>
->>**The following commands must be run against the code to run the app:**
->>python3 manage.py compilescss, to compile any SASS files you may have. This is optional and carries no marks; you do not need to use SASS unless desired.
->>python3 manage.py compilemessages, to generate localisation strings.
->>python3 manage.py makemigrations, in case required migrations were not supplied.
->>python3 manage.py migrate, to perform the migrations to the local database.
->>python3 manage.py seed, to insert your sample data into the database.
->>python3 manage.py test, to run your tests.
->>python3 manage.py runserver, to run your web application.
+<br />**The following commands must be run against the code to run the app:**
+```
+python3 manage.py compilescss, to compile any SASS files you may have. This is optional and carries no marks; you do not need to use SASS unless desired.
+python3 manage.py compilemessages, to generate localisation strings.
+python3 manage.py makemigrations, in case required migrations were not supplied.
+python3 manage.py migrate, to perform the migrations to the local database.
+python3 manage.py seed, to insert your sample data into the database.
+python3 manage.py test, to run your tests.
+python3 manage.py runserver, to run your web application.
+```
 
 **Cool Features:**
 >1. Clicking Buy on an album when not logged in will result in a popup
