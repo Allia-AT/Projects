@@ -9,13 +9,18 @@ The purpose of this project was to demonstrate my ability to:
 <br />This involved me building a web app using Django, which will include Python classes and a database that will provide the user interface to your application using standard web technologies.
 
 <br />**Problem Definition**
->>You will create a music cataloguing application, called 'MyMusic Maestro', to manage albums, songs, and users. The system has the following constraints.
+
+You will create a music cataloguing application, called 'MyMusic Maestro', to manage albums, songs, and users. The system has the following constraints.
 
 **Albums**
->>have an optional cover art image; they use a default image if a cover art image is not specified
->>have a title, which is required and may not be unique
->>have a description, which could be empty
->>have an artist, which is a string, and required
+
+have an optional cover art image; they use a default image if a cover art image is not specified
+
+have a title, which is required and may not be unique
+
+have a description, which could be empty
+
+have an artist, which is a string, and required
 >>have a price, in GBP, which is required but may be zero
 >>have a format, one of 'Digital download', 'CD', 'Vinyl'
 >>have a release date; unreleased albums may have a release date up to three years in the future (if more than one year away, it must be set to January)
