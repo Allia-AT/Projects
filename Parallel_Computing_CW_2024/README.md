@@ -1,3 +1,4 @@
+
 The code covers the practical aspects of creating a histogram from real data. 
 
 My task was to write an efficient CUDA kernel implementation of a uniform histogram having 256 bins. 
@@ -9,5 +10,4 @@ When creating the histogram, a data point x will fall into the i-th bin having l
 1. src/main.cpp: This file contains the main flow of the program and guides you through how to progress.
 2. src/com2039.hpp: This is a header file containing the declaration of functions you will need to write.
 3. src/Q1.cu: This contains the functions to find the lowest & highest value as well as the the funtion to create the hisogram.
-
-Note: I have obmitted the files that were use to mark this code.
+4. debug/: This folder was used to mark the coursework
