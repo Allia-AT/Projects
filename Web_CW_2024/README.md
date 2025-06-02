@@ -8,10 +8,10 @@ The purpose of this project was to demonstrate my ability to:
 
 <br />This involved me building a web app using Django, which will include Python classes and a database that will provide the user interface to your application using standard web technologies.
 
-<br />**Problem Definition**
+<br />**Problem Definition & Requirements**
 
 You will create a music cataloguing application, called 'MyMusic Maestro', to manage albums, songs, and users. The system has the following constraints.
-
+<br />The following were the requirements for the different aspects of the coursework.
 >**Albums**
 >>have an optional cover art image; they use a default image if a cover art image is not specified
 >>have a title, which is required and may not be unique
